@@ -1,2 +1,6 @@
 # About Me
-My CV
+
+Built with:
+
+* React
+* Vite
