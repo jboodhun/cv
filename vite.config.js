@@ -1,14 +1,17 @@
-import { sentryVitePlugin } from "@sentry/vite-plugin";
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+/* eslint-disable import/no-extraneous-dependencies */
+import { sentryVitePlugin } from '@sentry/vite-plugin';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), sentryVitePlugin({
-    org: "upstyle",
-    project: "javascript-react"
-  })],
+  plugins: [
+    react(),
+    sentryVitePlugin({
+      org: 'upstyle',
+      project: 'javascript-react',
+    }),
+  ],
   build: {
-    sourcemap: true
-  }
-})
+    sourcemap: true,
+  },
+});

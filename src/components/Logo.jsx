@@ -1,10 +1,13 @@
-import viteLogo from "/vite.svg";
-export const Logo = () => {
+import viteLogo from '../../public/vite.svg';
+
+const Logo = () => {
   return (
     <div>
-      <a href="https://vitejs.dev" target="_blank">
+      <a href="/">
         <img src={viteLogo} className="logo" alt="Vite logo" />
       </a>
     </div>
   );
 };
+
+export default Logo;
