@@ -1,6 +1,6 @@
-import { Logo } from './components/Logo';
+import Logo from './components/Logo';
 
-export const App = () => {
+const App = () => {
   return (
     <>
       <Logo />
@@ -8,3 +8,5 @@ export const App = () => {
     </>
   );
 };
+
+export default App;
