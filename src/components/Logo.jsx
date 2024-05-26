@@ -1,4 +1,4 @@
-import viteLogo from '../../public/vite.svg';
+import viteLogo from '../assets/images/vite.svg';
 
 const Logo = () => {
   return (
