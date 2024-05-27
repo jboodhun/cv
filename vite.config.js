@@ -7,10 +7,6 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 export default defineConfig({
   plugins: [
     react(),
-    sentryVitePlugin({
-      org: 'upstyle',
-      project: 'javascript-react',
-    }),
     viteStaticCopy({
       targets: [
         {
