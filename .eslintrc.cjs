@@ -44,6 +44,22 @@ module.exports = {
         unnamedComponents: 'arrow-function',
       },
     ],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          '**/*.jsx',
+          '**/*.test.js',
+          '**/*.spec.js',
+          'vite.config.js',
+          'tailwind.config.js',
+          'postcss.config.js',
+        ],
+        optionalDependencies: false,
+        peerDependencies: false,
+        packageDir: './',
+      },
+    ],
   },
   settings: {
     react: {
