@@ -7,7 +7,6 @@ import React, {
 } from 'react';
 import PropTypes from 'prop-types';
 
-// Context creation
 export const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
