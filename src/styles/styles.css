@@ -11,3 +11,34 @@ h1 {
   font-size: 4rem;
   font-weight: 800;
 }
+
+.theme-switcher {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.theme-switcher.dark svg {
+  fill: #666;
+  opacity: 0.3;
+  background-color: var(--current-primary);
+  color: #fff;
+}
+
+.theme-switcher.dark svg .transparent {
+  opacity: 0.2;
+  transition-duration: 200ms;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+}
+
+.theme-switcher.light svg .transparent {
+  opacity: 0.5; 
+  fill: transparent;
+  transition-duration: 200ms;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+}
